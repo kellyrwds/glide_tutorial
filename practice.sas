@@ -46,7 +46,7 @@ quit;
 
 
 /*Create permanent table*/
-%%droplab(table_name);
+%droplab(table_name);
 proc sql;
 %connectgl;
 execute(create table &sys_datalab..table_name as (
